@@ -43,6 +43,10 @@ app = Flask(__name__)
 #################################################
 # Flask Routes
 #################################################
+
+# Define a route to provide a welcome message and list available routes
+
+@app.route("/api/v1.0/precipitation")
 @app.route("/")
 def welcome():
     return(
@@ -58,7 +62,7 @@ def welcome():
 
 
 # Convert the query results from your precipitation analysis (i.e. retrieve only the last 12 months of data) to a dictionary using date as the key and prcp as the value.
-#Return the JSON representation of your dictionary.
+#Return the JSON representation of your dictionary
 
 
 @app.route("/api/v1.0/precipitation")
@@ -136,5 +140,6 @@ def stats(start = None , end = None):
     temps= list(np.ravel(results))
     return jsonify(temps=temps)
 
+# Run the Flask app in debug mode when the script is executed directly.
 if __name__ == "__main__":
     app.run(debug=True)
