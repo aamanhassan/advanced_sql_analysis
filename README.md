@@ -75,6 +75,9 @@ plt.ylabel("Precipitation")
 plt.title("Precipitation Data")
 Text(0.5, 1.0, 'Precipitation Data')
 
+![image](https://github.com/aamanhassan/advanced_sql_analysis/assets/139508376/32a10d54-9245-46f3-9487-74e0ff955670)
+
+
 # Use Pandas to calculate the summary statistics for the precipitation data
 df.describe()
 precipitation
@@ -130,6 +133,9 @@ df.plot.hist(bins=12)
 plt.xlabel("Temperature")
 plt.tight_layout()
 plt.show()
+
+<img width="684" alt="Screenshot 2023-10-15 at 1 07 46 PM" src="https://github.com/aamanhassan/advanced_sql_analysis/assets/139508376/dcc80f79-1e0a-4bcc-9b0e-e7ab87caeb60">
+
 
 Close Session
 # Close Session
