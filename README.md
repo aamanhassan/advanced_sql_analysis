@@ -1,7 +1,7 @@
 # advanced_sql_analysis
 Module_10_challenge
 
-# Initioalizing my analysis by Analyzing and Exploring the Climate Data in Jupyter notebook
+# Initializing my analysis by Analyzing and Exploring the Climate Data in Jupyter notebook
 
 %matplotlib inline
 from matplotlib import style
